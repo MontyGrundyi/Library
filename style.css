@@ -1,31 +1,67 @@
-#booksTable {
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-family: Arial, sans-serif;
-  }
+table {
+  width: auto;
+  max-width: 600px;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  th {
-    background-color: #0f100f;
-    color: white;
-    text-align: left;
-    padding: 10px;
-  }
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: center;
+  white-space: nowrap;
+}
 
-  td {
-    text-align: left;
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-  }
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
 
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
 
-  table,
-  th,
-  td {
-    border: 1px solid #ddd;
-  }
+.toggle-btn,
+.delete-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.toggle-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-btn.read {
+  background-color: #28a745;
+}
+
+.toggle-btn.not-read {
+  background-color: #dc3545;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #b30000;
 }

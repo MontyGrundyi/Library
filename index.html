@@ -14,9 +14,33 @@
           <th>Title</th>
           <th>Pages</th>
           <th>Read</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody></tbody>
+      <dialog id="dialog">
+        <form method="dialog" class="form-container" id="bookform">
+          <p>
+            <label for="Author">Author: </label>
+            <input type="text" id="author" required />
+          </p>
+          <p>
+            <label for="Title">Title: </label>
+            <input type="text" id="title" />
+          </p>
+          <p>
+            <label for="Pages">Pages: </label>
+            <input type="number" id="pages" />
+          </p>
+          <p>
+            <label for="Read">Read: </label>
+            <input type="checkbox" id="read" />
+          </p>
+          <button value="cancel" id="cancel" formmethod="dialog">Cancel</button>
+          <input type="submit" id="submit" value="submit" class="submit-btn" />
+        </form>
+      </dialog>
+      <button id="show-dialog">New Book</button>
     </table>
     <script src="script.js"></script>
   </body>
